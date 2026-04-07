@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        a
+    </div>
+    <div class="main">
+        <div class="booking-interface">
+            <form action="">
+                <p><b>Ny bokning</b></p>
+                <div class="forms">
+                    <div class="form-1">
+                        <label><b>Namn*</b> <br><input type="text" name="" id=""
+                                placeholder="Anders Andersson"></label><br>
+                        <label><b>Upphämtning*</b> <br><input type="text" name="" id=""
+                                placeholder="Göteborg Centralstation"></label>
+                        <br>
+                        <label><b>Destination*</b> <br><input type="text" name="" id=""placeholder="Landvetter Flygplats"></label>
+                        <div class="checkboxes">
+                            <label><input type="checkbox" name="" id=""><b>Rullstol</b></label>
+                            <label><input type="checkbox" name="" id=""><b>Husdjur</b></label>
+                            <label><input type="checkbox" name="" id=""><b>Bilbarnstol</b></label>
+                            <label><input type="checkbox" name="" id=""><b>Stort baggage</b></label>
+                            <label><input type="checkbox" name="" id=""><b>Babyskydd</b></label>
+                            <label><input type="checkbox" name="" id=""><b>Ensamresande barn</b></label>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <label><b>Telefonnummer*</b> <br><input type="text" name="" id="" placeholder="012 345 67 89"></label><br>
+                        <label><b>Mellanstopp</b> <br><input type="text" name="" id="" placeholder="Ange address..." style="font-style:italic"></label><br>
+                        <label><b>Önskemål/Övrig information</b> <br><textarea name="" id="" placeholder="Jag vill gärna ha..."></textarea></label>
+                    </div>
+                    <div class="form-2">
+                        <label><b>Antal passagerare*</b> <br>
+                            <select name="antal-passagerare" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label><br>
+                        <button class="add-stop">+ mellanstopp</button>
+                    </div>
+                    <div class="form-2">
+                        <label><b>Fordonstyp</b> <br>
+                            <select name="fordonstyp" id="">
+                                <option value="minivan">Minivan</option>
+                                <option value="suv">SUV</option>
+                                <option value="skapbil">Skåpbil</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="pansarvagn">Pansarvagn!!!</option>
+                            </select>
+                        </label><br>
+                    </div>
+                </div>
+                <div class="driver-select">
+
+                    </div>
+                    <button>Avbryt</button>
+                    <button>Bekräfta bokning</button>
+            </form>
+        </div>
+        <div class="map">
+            <img src="map.png" alt="map-pic">
+        </div>
+    </div>
+</body>
+
+</html>

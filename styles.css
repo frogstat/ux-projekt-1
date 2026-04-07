@@ -1,0 +1,94 @@
+/* * {border: solid 1px black} */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img{
+    /* height: 100%; */
+    width: 100%;
+}
+
+.header{
+    background-color: #30396e;
+    min-width: auto;
+    /* min-height: 40px; */
+    height: 10%;
+}
+
+.main{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.booking-interface{
+    width: 60%;
+        margin-left: 5px;
+    margin-right: 5px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.form-1{
+    width: 41.75%;
+}
+
+
+.form-2{
+    width: 16.5%;
+}
+
+.map{
+    background-color: red;
+    height: 200px;
+    flex: 1;
+}
+
+.checkboxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.add-stop {
+  border: 2px dashed #ccc;
+  background: transparent;
+  padding: 5px 10px;
+  color: #999;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 10px;
+  margin-top: 29px;
+  width: 90%;
+}
+
+input, textarea, select{
+    background-color: #f1f1f1;
+    border: 1px solid #818181;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+  width:90%;
+  /* width: 250px; */
+}
+
+input[type='text']{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+select{
+    min-width: 20px;
+    width: 90%;
+}
