@@ -9,12 +9,7 @@ body {
     padding: 0;
     font-size: small;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-img {
-    /* height: 100%; */
-    width: 100%;
-}
+} 
 
 .header {
     display: flex;
@@ -58,7 +53,7 @@ img {
 }
 
 .booking-interface {
-    width: 60%;
+    width: 70%;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -67,24 +62,30 @@ img {
     display: flex;
     flex-direction: row;
     width: 100%;
-
+    align-items: flex-start;
 }
 
 .form-1 {
-    width: 41.75%;
+    width: 31.75%;
 }
-
 
 .form-2 {
-    width: 16.5%;
+    /* width: 18.25%; */
+    width: auto;
+    /* display: flex; */
+    /* align-items: center;
+    gap: 5px; */
+    margin-right: 20px;
 }
 
-.form-2 > img {
-    height: ;
+select {
+    min-width: 20px;
+    width: 120px;
 }
 
 .map {
     overflow: hidden; /* prevents spill */
+    width: 33.3%;
 }
 
 .checkboxes {
@@ -101,7 +102,7 @@ img {
     border-radius: 3px;
     font-size: 10px;
     margin-top: 29px;
-    width: 90%;
+    width: 120px;
 }
 
 input,
@@ -124,10 +125,7 @@ input[type='text'] {
     margin-bottom: 8px;
 }
 
-select {
-    min-width: 20px;
-    width: 90%;
-}
+
 
 
 
