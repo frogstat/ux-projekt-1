@@ -79,6 +79,10 @@ img {
     width: 16.5%;
 }
 
+.form-2 > img {
+    height: ;
+}
+
 .map {
     overflow: hidden; /* prevents spill */
 }
