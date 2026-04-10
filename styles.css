@@ -8,11 +8,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: small;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 
 .header {
     display: flex;
+    font-size: large;
     gap: 10px;
     background-color: #30396e;
     height: 7vh;
@@ -54,12 +55,14 @@ body {
     display: flex;
     height: 93vh;
     width: 100%;
+    min-height: 0;
 }
 
 .booking-interface {
     width: 70%;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    margin: 0 20px;
 }
 
 .forms {
@@ -91,6 +94,7 @@ select {
     width: 33.3%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .map img {
@@ -98,6 +102,30 @@ select {
     height: 100%;
     object-fit: cover;
     object-position: center; /* keeps crop centered */
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Search bar */
+.map-search {
+    position: absolute;
+    top: 60px;
+    left: 75px;
+    width: 80%;
+    /* max-width: 500px; */
+    z-index: 1000; /* 👈 makes it sit above map */
+}
+
+.map-search input {
+    width: 100%;
+    padding: 2px 14px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: #f1f1f1;
+    font-size: 14px;
 }
 
 .checkboxes {
@@ -126,7 +154,7 @@ select {
 
 textarea {
     resize: none;
-    height: 50px;
+    height: 80px;
     width: 90%;
     /* width: 250px; */
 }
@@ -137,7 +165,10 @@ input[type='text'] {
     margin-bottom: 8px;
 }
 
-
+a { 
+    color:white;
+    text-decoration: none;
+}
 
 
 
@@ -145,11 +176,10 @@ input[type='text'] {
 
 
 .driver-select{
-    height:43vh;
+    max-height: 43vh;
     overflow-y: auto;
     border: solid rgb(96, 96, 96) 1px;
     border-radius: 5px;
-
 }
 
 .card {
@@ -226,6 +256,8 @@ input[type='text'] {
 
 .status {
     color: green;
+    position: relative;
+    right: 10px;
     font-weight: bold;
     text-align: center;
 }
@@ -253,5 +285,16 @@ input[type='text'] {
 .last-btns{
     display: flex;
     justify-content: right;
-    margin-top: 7px;
+    margin-top: 20px;
+}
+
+.vehicle-search{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.vehicle-search select{
+    height: 25px; 
 }
