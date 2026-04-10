@@ -42,13 +42,17 @@ body {
 
 }
 
+.checkboxes{
+    font-size: 11px;
+}
+
 .small-text {
     font-size: 8px;
 }
 
 .main {
     display: flex;
-    height: auto;
+    height: 93vh;
     width: 100%;
 }
 
@@ -84,8 +88,16 @@ select {
 }
 
 .map {
-    overflow: hidden; /* prevents spill */
     width: 33.3%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* keeps crop centered */
 }
 
 .checkboxes {
