@@ -186,17 +186,23 @@ a {
 
 
 .driver-select{
+    display: flex;
+    flex-direction: column;
     max-height: 43vh;
     overflow-y: auto;
     border: solid rgb(96, 96, 96) 1px;
     border-radius: 5px;
+    gap: 10px;
 }
 
 .driver-select-large {
+    display: flex;
+    flex-direction: column;
     max-height: 130vh;
     overflow-y: auto;
     border: solid rgb(96, 96, 96) 1px;
     border-radius: 5px;
+    gap: 10px;
 }
 
 .driver-name{
@@ -208,7 +214,6 @@ a {
     border: 1px solid #ccc;
     border-radius: 6px;
     padding: 5px 15px;
-    margin-bottom: 10px;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
