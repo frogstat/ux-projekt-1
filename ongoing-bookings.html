@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -10,29 +10,34 @@
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="header-button">
             <p><b>TigerTaxi</b></p>
         </div>
-        <div class="header-button">
-            <p><a href="index.html"><b>Ny Bokning</b></a></p>
-        </div>
-        <div class="header-button" style="background-color: #6574d4;">
-            <p><a href="ongoing-bookings.html"><b>Pågående bokningar</b></a></p>
-        </div>
-        <div class="header-button">
-            <p><a href="vehicles.html"><b>Fordon</b></a></p>
-        </div>
+
+        <nav>
+            <div class="header-button">
+                <p><a href="index.html"><b>Ny Bokning</b></a></p>
+            </div>
+
+            <div class="header-button" style="background-color: #6574d4;">
+                <p><a href="ongoing-bookings.html"><b>Pågående bokningar</b></a></p>
+            </div>
+
+            <div class="header-button">
+                <p><a href="vehicles.html"><b>Fordon</b></a></p>
+            </div>
+        </nav>
+
         <div class="header-button">
             <p>Axel Axelsson</p>
-            <p style="font-size: 10px">Logga ut</p>
+            <p style="font-size: 10px; cursor: pointer;">Logga ut</p>
         </div>
-
-    </div>
-    <div class="main">
+    </header>
+    <main>
         <div class="booking-interface">
             <form>
-                <p style="font-size: x-large;"><b>Pågående Bokningar</b></p>
+                <h1>Pågående Bokningar</h1>
                 <div class="driver-select-large">
 
                     <div class="card">
@@ -230,7 +235,7 @@
                 <input type="text" placeholder="🔍 Sök taxi eller adress..." />
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

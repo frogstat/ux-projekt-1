@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -10,46 +10,45 @@
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="header-button">
             <p><b>TigerTaxi</b></p>
         </div>
 
-        <div class="header-button" style="background-color: #6574d4;">
-            <p><a href="index.html"><b>Ny Bokning</b></a></p>
-        </div>
+        <nav>
+            <div class="header-button" style="background-color: #6574d4;">
+                <p><a href="index.html"><b>Ny Bokning</b></a></p>
+            </div>
+
+            <div class="header-button">
+                <p><a href="ongoing-bookings.html"><b>Pågående bokningar</b></a></p>
+            </div>
+
+            <div class="header-button">
+                <p><a href="vehicles.html"><b>Fordon</b></a></p>
+            </div>
+        </nav>
 
         <div class="header-button">
-            <p><a href="ongoing-bookings.html"><b>Pågående bokningar</b></a></p>
+                <p>Axel Axelsson</p>
+                <p style="font-size: 10px; cursor: pointer;">Logga ut</p>
         </div>
+    </header>
 
-        <div class="header-button">
-            <p><a href="vehicles.html"><b>Fordon</b></a></p>
-        </div>
-
-        <div class="header-button">
-            <p>Axel Axelsson</p>
-            <p style="font-size: 10px">Logga ut</p>
-        </div>
-    </div>
-
-    <div class="main">
+    <main>
         <div class="booking-interface">
             <form>
                 <div class="form-header">
-                    <p style="font-size: x-large;"><b>Ny bokning</b></p>
+                    <h1>Ny bokning</h1>
                     <p><b>09:49</b></p>
                 </div>
 
                 <div class="forms">
                     <div class="form-1">
-                        <label><b>Namn*</b> <br><input type="text"
-                                placeholder="Anders Andersson"></label><br>
-                        <label><b>Upphämtning*</b> <br><input type="text"
-                                placeholder="Göteborg Centralstation"></label>
+                        <label><b>Namn*</b> <br><input type="text" placeholder="Anders Andersson"></label><br>
+                        <label><b>Upphämtning*</b> <br><input type="text" placeholder="Göteborg Centralstation"></label>
                         <br>
-                        <label><b>Destination*</b> <br><input type="text"
-                                placeholder="Landvetter Flygplats"></label>
+                        <label><b>Destination*</b> <br><input type="text" placeholder="Landvetter Flygplats"></label>
                         <div class="checkboxes">
                             <label><input type="checkbox"><b>Rullstol</b></label>
                             <label><input type="checkbox"><b>Husdjur</b></label>
@@ -61,8 +60,7 @@
                     </div>
 
                     <div class="form-1">
-                        <label><b>Telefonnummer*</b> <br><input type="text"
-                                placeholder="012 345 67 89"></label><br>
+                        <label><b>Telefonnummer*</b> <br><input type="text" placeholder="012 345 67 89"></label><br>
                         <label><b>Mellanstopp</b> <br><input type="text" placeholder="Ange address..."
                                 style="font-style:italic"></label><br>
                         <label><b>Önskemål/Övrig information</b> <br><textarea
@@ -98,10 +96,12 @@
                     </div>
 
                     <div class="form2">
-                        <img src="questionmark.png" alt="question-mark" height="18" style="margin-top: 17px; margin-left: -15px; cursor: pointer;">
+                        <img src="questionmark.png" alt="question-mark" height="18"
+                            style="margin-top: 17px; margin-left: -15px; cursor: pointer;">
                     </div>
                 </div>
-                <p style="font-size: x-large;"><b>Föreslagna bilar</b></p>
+                <br>
+                <h1>Föreslagna bilar</h1>
                 <div class="driver-select">
                     <div class="card">
                         <div class="left">
@@ -215,8 +215,8 @@
                                 <div class="meta">
                                     <span>Minivan</span>
                                     <span>Start 05:30</span>
-                                    <span style="color: red;">Paus 10:00</span><img src="alert.png" alt="alert" height="12"
-                                        style="position: relative; right: 8px; top: 3px;">
+                                    <span style="color: red;">Paus 10:00</span><img src="alert.png" alt="alert"
+                                        height="12" style="position: relative; right: 8px; top: 3px;">
                                     <span>Slut 13:30</span>
                                 </div>
 
@@ -272,7 +272,8 @@
                 </div>
                 <div class="last-btns">
                     <button class="btn" style="font-size: medium;">Avbryt</button>
-                    <button type="button" class="btn-filled" onclick="openPopup()" style="font-size: medium;">Bekräfta bokning</button>
+                    <button type="button" class="btn-filled" onclick="openPopup()" style="font-size: medium;">Bekräfta
+                        bokning</button>
                 </div>
             </form>
         </div>
@@ -283,10 +284,10 @@
                 <input type="text" placeholder="🔍 Sök taxi eller adress..." />
             </div>
         </div>
-    </div>
+    </main>
 
     <div class="overlay" id="overlay"></div>
-    
+
     <div class="confirmation-popup" id="confirmation-popup">
         <div class="confirmation-header">
             <img src="checkmark.png" alt="checkmark" height="50">
