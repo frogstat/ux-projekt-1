@@ -182,15 +182,25 @@ main {
     align-items: center;
     width: 80%;
     z-index: 90;
+
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border: 1px solid #818181;
+    padding: 0 8px;
+    gap: 4px;
 }
 
 .map-search input {
+    border: none;
+    background: transparent;
+    outline: none;
     width: 100%;
-    padding: 2px 14px;
+    padding: 2px 2px;
     border-radius: 6px;
-    border: 1px solid black;
     background: #f1f1f1;
     font-size: 14px;
+    margin-bottom: 0px;
 }
 
 
@@ -348,8 +358,29 @@ main {
     margin-bottom: 10px;
 }
 
+/* .vehicle-search input{
+    padding-left: 8px;
+} */
+
 .vehicle-search select {
     height: 25px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border: 1px solid #818181;
+    padding: 0 8px;
+    gap: 4px;
+}
+
+.search-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 

@@ -39,7 +39,10 @@
             <form>
                 <h1>Fordon</h1>
                 <div class="vehicle-search">
-                    <input type="text" id="vehicle-seach-bar" placeholder="🔍 Sök taxi eller chaufför..." />
+                    <div class="search-wrapper">
+                        <span>🔍</span>
+                        <input type="text" id="vehicle-search-bar" placeholder="Sök taxi eller chaufför..." />
+                    </div>
                     <select name="availability">
                         <option value="tillganglig">Tillgänglig</option>
                         <option value="upptagen">Upptagen</option>
@@ -273,7 +276,8 @@
             <img src="map.png" alt="map-pic">
             <div id="map"></div>
             <div class="map-search">
-                <input type="text" placeholder="🔍 Sök taxi eller adress..." />
+                <span>🔍</span>
+                <input type="text" placeholder="Sök taxi eller address..." />
             </div>
         </div>
     </main>
